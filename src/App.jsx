@@ -2,32 +2,33 @@ import './App.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useEffect } from 'react'
+import { SplitText } from 'gsap/SplitText'
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger , SplitText,)
 
 function App() {
-  useEffect(() => {
 
-    gsap.fromTo('#title', {
+  useEffect(() => {
+    let split = SplitText.create('#title', { type: 'words' });
+
+    
+
+    gsap.from(split.words, {
+      x: -100,
+      autoAlpha: 0,
+      stagger:0.2,
+      duration: 1,
+      ease: 'power2.out',
+    });
+    gsap.fromTo('.animate-img', {
+      x: 500,
       opacity: 0,
-      y: 50
+
     }, {
       opacity: 1,
-      y: 0,
-      duration: 1.5,
-      stagger: 0.3,
-      ease: 'power2.out'
-    });
-
-    gsap.fromTo('.animate-img', {
-      x: 500,          
-      opacity: 0,       
-   
-    },{
-      opacity:1,
-      x:0,
+      x: 0,
       stagger: 0.7,
-      duration: 1.5, 
+      duration: 1.5,
       ease: 'power2.out',
       delay: 1,
 
@@ -38,12 +39,16 @@ function App() {
     <div className='bg-white min-h-screen w-full relative overflow-hidden'>
       <div className='h-screen flex items-center px-20 w-50 md:flex'>
         <h1 id='title' className='text-8xl text-black font-bold z-10 font-[inria-serif] uppercase md:w-1/2 w-full'>
-          Build Something that<br/> matters with NuView
+          Build Something that<br />matters with NuView
+          <button className='bg-black hover:bg-gray-700 hover:text-black text-white text-2xl px-4 rounded w-50 h-10'>
+            Get Started
+          </button>
         </h1>
-        <img 
-          src='1.jpg' 
-          alt='img' 
-          className='animate-img absolute right-0 w-150 h-150 mt-100 mb-150 mr-14 rounded-2xl object-cover md:block hidden' 
+
+        <img
+          src='1.jpg'
+          alt='img'
+          className='animate-img absolute right-0 w-150 h-150 mt-100 mb-150 mr-14 rounded-2xl object-cover md:block hidden'
           id='picture'
         />
         <img

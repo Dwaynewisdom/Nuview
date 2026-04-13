@@ -36,11 +36,12 @@ function App() {
   }, [])
 
   return (
-    <div className='bg-white min-h-screen w-full relative overflow-hidden'>
-      <div className='h-screen flex items-center px-20 w-50 md:flex'>
-        <h1 id='title' className='text-8xl text-black font-bold z-10 font-[inria-serif] uppercase md:w-1/2 w-full'>
+    <div className='bg-[#0B0E14] min-h-screen w-full relative overflow-hidden'>
+      <div className='md:h-screen mt-10 md:flex md:flex-row items-center flex flex-col md:items-center md:px-20 md:w-50'>
+        <h1 id='title' className='text-gray-100 text-5xl  w-100 font-bold text-center md:text-left mt-0 uppercase md:text-8xl md:text-gray-100 md:z-10 font-[inria-serif]'>
           Build Something that<br />matters with NuView
-          <button className='bg-black hover:bg-gray-700 hover:text-black text-white text-2xl px-4 rounded w-50 h-10'>
+          <br />
+          <button className='bg-teal-500 hover:bg-teal-400 hover:text-white text-black text-2xl px-4 rounded w-50 h-10'>
             Get Started
           </button>
         </h1>
@@ -48,18 +49,18 @@ function App() {
         <img
           src='1.jpg'
           alt='img'
-          className='animate-img absolute right-0 w-150 h-150 mt-100 mb-150 mr-14 rounded-2xl object-cover md:block hidden'
+          className='animate-img  w-60 ml-5 mt-80 absolute h-60 rounded-2xl md:absolute md:right-0 md:w-150 md:h-150 md:mt-100 md:mb-150 md:mr-14 md:rounded-2xl md:object-cover'
           id='picture'
         />
         <img
           src='3.jpg'
           alt='img'
-          className='animate-img absolute right-0 w-150 h-150 mt-300 mb-250 mr-70 rounded-2xl object-cover md:block hidden'
+          className='animate-img  w-50 ml-35 mt-90 absolute h-50 rounded-2xl md:absolute md:right-0 md:w-150 md:h-150 md:mt-300 md:mb-250 md:mr-70 md:rounded-2xl md:object-cover '
         />
         <img
           src='2.jpg'
           alt='img'
-          className='animate-img absolute right-0 w-150 h-100 mt-300 mb-200 mr-5 rounded-2xl object-cover md:block hidden'
+          className='animate-img  w-40 ml-60 mt-100 absolute h-40 rounded-2xl  md:absolute md:right-0 md:w-150 md:h-100 md:mt-300 md:mb-200 md:mr-5 md:rounded-2xl md:object-cover '
         />
       </div>
     </div>

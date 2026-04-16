@@ -74,14 +74,6 @@ function About() {
           Built to{' '}
           <span className="text-orange-400 relative inline-block">
             Perform
-            <svg
-              className="absolute -bottom-2 left-0 w-full"
-              height="6" viewBox="0 0 200 6" fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden
-            >
-              <path d="M0 3 Q50 0 100 3 Q150 6 200 3" stroke="#fb923c" strokeWidth="2" fill="none"/>
-            </svg>
           </span>
         </h1>
 
@@ -105,7 +97,7 @@ function About() {
           What We Offer
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-neutral-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px ">
           {services.map((s) => (
             <div
               key={s.number}

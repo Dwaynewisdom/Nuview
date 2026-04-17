@@ -41,9 +41,13 @@ function App() {
         <h1 id='title' className='text-gray-100 text-5xl  w-100 font-bold text-center md:text-left mt-0 uppercase md:text-8xl md:text-gray-100 md:z-10 font-[inria-serif]'>
           Build Something that<br /><span className='text-amber-600'> matters</span> with NuView
           <br />
-          <button className='bg-amber-600 hover:bg-amber-700 hover:text-white text-black text-2xl px-4 rounded w-50 h-10'>
-            Get Started
-          </button>
+          <a
+          href="#contact"
+          className="group inline-flex items-center gap-3 font-[space-mono] text-sm border border-orange-400 text-orange-400 px-8 py-4 hover:bg-orange-400 hover:text-neutral-950 transition-all duration-200 shrink-0"
+        >
+          Get Started
+          <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+        </a>
         </h1>
 
         <img

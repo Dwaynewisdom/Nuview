@@ -161,7 +161,7 @@ function About() {
             <span className="text-orange-400">something real?</span>
           </h2>
           <p className="mt-4 text-neutral-400 font-[space-mono] text-sm max-w-md">
-            Let's talk about your project. No fluff, no templates — just results.
+            Let's talk about your project, no templates, your ideas shape your design and we give the <span className='uppercase text-amber-600 font-bold text-2xl'> results</span>
           </p>
         </div>
 
@@ -172,6 +172,64 @@ function About() {
           Start a Project
           <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
         </a>
+      </section>
+      <section>
+        <div>
+      <footer className="w-full border-t border-neutral-900 bg-neutral-950 pt-16 pb-8 px-6 md:px-16">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+          
+      
+          <div className="md:col-span-1">
+            <h3 className="text-xl font-bold text-white mb-4">NuView</h3>
+            <p className="text-neutral-400 font-[space-mono] text-xs leading-relaxed">
+              Helping <span className='text-amber-600 font-bold uppercase'>Local</span> businesses stand out online with modern, fast, and affordable web solutions.
+            </p>
+            <p className="mt-6 text-[10px] font-[space-mono] uppercase tracking-widest text-neutral-600">
+              Est. 2026 / Based in Portmore
+            </p>
+          </div>
+
+        
+          <div>
+            <h4 className="font-[space-mono] text-xs uppercase tracking-widest text-orange-400 mb-6">Services</h4>
+            <ul className="space-y-3 text-sm text-neutral-400 font-[space-mono]">
+              <li className="hover:text-white transition-colors cursor-pointer">Web Design</li>
+              <li className="hover:text-white transition-colors cursor-pointer">SEO Optimization</li>
+              <li className="hover:text-white transition-colors cursor-pointer">Site Maintenance</li>
+              <li className="hover:text-white transition-colors cursor-pointer">E-commerce</li>
+            </ul>
+          </div>
+
+          
+          <div>
+            <h4 className="font-[space-mono] text-xs uppercase tracking-widest text-orange-400 mb-6">Connect</h4>
+            <ul className="space-y-3 text-sm text-neutral-400 font-[space-mono]">
+              <li className="hover:text-white transition-colors cursor-pointer underline decoration-orange-400/30">LinkedIn</li>
+              <li className="hover:text-white transition-colors cursor-pointer underline decoration-orange-400/30">Instagram</li>
+              <li className="hover:text-white transition-colors cursor-pointer underline decoration-orange-400/30">Twitter / X</li>
+            </ul>
+          </div>
+
+      
+          <div>
+            <h4 className="font-[space-mono] text-xs uppercase tracking-widest text-orange-400 mb-6">Inquiries</h4>
+            <p className="text-sm text-neutral-300 font-[space-mono] mb-2">hello@nuview.dev</p>
+            <p className="text-sm text-neutral-500 font-[space-mono]">Available Mon — Fri</p>
+          </div>
+        </div>
+
+       
+        <div className="max-w-6xl mx-auto mt-16 pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-[10px] font-[space-mono] text-neutral-300 uppercase tracking-tighter">
+            © 2026 NuView Web Development. All Rights Reserved.
+          </p>
+          <div className="flex gap-6 text-[10px] font-[space-mono] text-neutral-600 uppercase">
+            <span className="hover:text-neutral-400 cursor-pointer">Privacy</span>
+            <span className="hover:text-neutral-400 cursor-pointer">Terms</span>
+          </div>
+        </div>
+      </footer>
+        </div>
       </section>
 
     </div>

@@ -220,7 +220,7 @@ function About() {
 
        
         <div className="max-w-6xl mx-auto mt-16 pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[10px] font-[space-mono] text-neutral-300 uppercase tracking-tighter">
+          <p className="text-[10px] font-[space-mono] text-neutral-300 uppercase tracking-tighter md:text-lg">
             © 2026 NuView Web Development. All Rights Reserved.
           </p>
           <div className="flex gap-6 text-[10px] font-[space-mono] text-neutral-600 uppercase">

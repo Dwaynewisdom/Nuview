@@ -102,10 +102,10 @@ function App() {
       </div>
 
 
-      <div id="about-container" ref={containerRef} className="w-full relative">
+      <div id="about-container" ref={containerRef} className="mt-100">
 
-        <section className="px-6 md:px-16 pt-28 pb-20 max-w-5xl">
-          <p className="text-orange-400 font-[space-mono] text-sm tracking-widest uppercase mb-4">
+        <section className="px-6 md:px-16 mt-50 pb-20 max-w-5xl">
+          <p className="text-orange-400 font-[space-mono] text-sm tracking-widest uppercase mb-4 mt-50">
             About Us
           </p>
           <h1 ref={headingRef} className="text-5xl md:text-7xl font-bold leading-tight">

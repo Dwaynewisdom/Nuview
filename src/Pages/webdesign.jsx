@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const processSteps = [
   { step: '01', title: 'Discovery', desc: 'We analyze your local competitors and identify the unique value your business offers.' },
@@ -61,6 +62,14 @@ function WebDesign() {
         <a href="#contact" className="inline-block border border-orange-400 text-orange-400 px-10 py-4 font-[space-mono] hover:bg-orange-400 hover:text-neutral-950 transition-all">
           Get a Free Audit
         </a>
+      </section>
+      <section className="mt-20 text-center">
+        <Link
+            to="/"
+            className="group inline-flex items-center gap-3 font-[space-mono] text-sm border border-neutral-700 text-neutral-400 px-8 py-4 hover:border-orange-400 hover:text-orange-400 transition-all duration-200"
+          >
+            ← Back to Dashboard
+          </Link>
       </section>
 
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 function SEO() {
   const features = [
@@ -35,7 +36,6 @@ function SEO() {
         </div>
       </section>
 
-      {/* Stats/Proof Section */}
       <section className="py-20 bg-neutral-900/50 px-8 md:px-16 rounded-2xl border border-neutral-800">
         <div className="grid md:grid-cols-3 gap-12 text-center">
           <div>
@@ -52,6 +52,15 @@ function SEO() {
           </div>
         </div>
       </section>
+      <section className="mt-20 text-center">
+        <Link
+            to="/"
+            className="group inline-flex items-center gap-3 font-[space-mono] text-sm border border-neutral-700 text-neutral-400 px-8 py-4 hover:border-orange-400 hover:text-orange-400 transition-all duration-200"
+          >
+            ← Back to Dashboard
+          </Link>
+      </section>
+      
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Link } from 'react-router-dom'
 
 function Contact() {
   const form = useRef();
@@ -68,6 +69,15 @@ function Contact() {
           </button>
         </form>
       </div>
+      <section className="mt-32 py-20 border-t border-neutral-800 text-center">
+        <Link
+            to="/"
+            className="group inline-flex items-center gap-3 font-[space-mono] text-sm border border-neutral-700 text-neutral-400 px-8 py-4 hover:border-orange-400 hover:text-orange-400 transition-all duration-200"
+          >
+            ← Back to Dashboard
+          </Link>
+      </section>
+      
     </div>
   );
 }

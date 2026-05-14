@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 function WebDevelopment() {
   const stacks = [
@@ -57,6 +58,14 @@ function WebDevelopment() {
             <li>• Transparent development process</li>
           </ul>
         </div>
+      </section>
+      <section className="mt-20 text-center">
+        <Link
+            to="/"
+            className="group inline-flex items-center gap-3 font-[space-mono] text-sm border border-neutral-700 text-neutral-400 px-8 py-4 hover:border-orange-400 hover:text-orange-400 transition-all duration-200"
+          >
+            ← Back to Dashboard
+          </Link>
       </section>
     </div>
   );

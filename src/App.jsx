@@ -212,7 +212,6 @@ function App() {
 
             <div>
               <h4 className="font-[space-mono] text-xs uppercase tracking-widest text-orange-400 mb-6">Inquiries</h4>
-              <p className="text-md text-white font-[space-mono] mb-2">hello@nuview.dev</p>
               <p className="text-sm text-neutral-400 font-[space-mono]">Available Mon — Fri</p>
             </div>
           </div>
@@ -222,8 +221,8 @@ function App() {
               © 2026 NuView Web Development. All Rights Reserved.
             </p>
             <div className="flex gap-6 text-[10px] font-[space-mono] text-neutral-600 uppercase">
-              <span className="hover:text-neutral-400 cursor-pointer">Privacy</span>
-              <span className="hover:text-neutral-400 cursor-pointer">Terms</span>
+              <span className="hover:text-neutral-400 cursor-pointer"><Link to="/privacy">Privacy</Link></span>
+              <span className="hover:text-neutral-400 cursor-pointer"><Link to="/terms">Terms</Link></span>
             </div>
           </div>
         </footer>

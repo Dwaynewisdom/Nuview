@@ -8,6 +8,8 @@ import Contact from './Pages/contact.jsx';
 import SEO from './Pages/seo.jsx';
 import WebDevelopment from './Pages/webdevelopment.jsx';
 import Services from './Pages/services.jsx';
+import Privacy from './Pages/Privacy.jsx';
+import Terms from './Pages/Terms.jsx';
 import { createHashRouter,RouterProvider } from 'react-router-dom';
 
 const router = createHashRouter([
@@ -16,7 +18,10 @@ const router = createHashRouter([
   { path: "/contact", element: <Contact /> },
   { path: "/seo", element: <SEO /> },
   {path: "/development", element: <WebDevelopment /> },
-  {path: "/services", element: <Services /> }
+  {path: "/services", element: <Services /> },
+  {path: "/privacy", element: <Privacy /> },
+  {path: "/terms", element: <Terms /> },
+
 
 
 ]);

@@ -18,7 +18,7 @@ function Contact() {
       return;
     }
 
-    emailjs.sendForm('service_ocd4zwi', 'template_q5oo8wd', form.current, 'Ngp9IVBWQVTry5_yVxu2q')
+    emailjs.sendForm('service_ocd4zwi', 'template_q5oo8wd', form.current, 'rn7K40aFK2R1HAk8P')
       .then((result) => {
           setModalMessage("Your message has been sent successfully, we'll get back to you soon!");
           setShowModal(true);

@@ -18,7 +18,7 @@ function Contact() {
       return;
     }
 
-    emailjs.sendForm('service_ocd4zwi', 'template_q5oo8wd', form.current, 'MrSvLoYRbDtp6iZvT')
+    emailjs.sendForm('service_ocd4zwi', 'template_q5oo8wd', form.current, 'Ngp9IVBWQVTry5_yVxu2q')
       .then((result) => {
           setModalMessage("Your message has been sent successfully, we'll get back to you soon!");
           setShowModal(true);
@@ -31,7 +31,6 @@ function Contact() {
 
   return (
     <div className="min-h-screen bg-neutral-950 text-white px-6 md:px-16 py-28">
-      {/* Custom Modal */}
       {showModal && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
           <div className="bg-neutral-900 border border-neutral-700 rounded-lg p-8 max-w-sm w-full text-center">
